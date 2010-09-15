@@ -1,4 +1,4 @@
-# Arena Queue System - Small imprint, big possibilities
+# NodeJS/WebSockets Arena Queue System - Small imprint, big possibilities
 
 Web applications have evolved by utilizing push technologies. If you're building anything where users need to interact with other users to create
 a competitive environment, this queue system is just for you. The importance of queue'ing systems is to help users find other players
