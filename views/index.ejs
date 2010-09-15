@@ -1,0 +1,32 @@
+<div id="container">
+  <div class="gutter">
+  
+    <header>
+      <h1>Arena Queue System</h1>
+    </header>
+  
+    <div id="main">
+      <p>Demonstrates having players of the game queue into a battlefield, have the system automatically
+        match player vs player, and provide a hook for developers to direct the users into a flow (typically
+        a game instance). All done through WebSockets.</p>
+        
+      <ul class="controls">
+        <li><button id="btn-enter" class="awesome large blue">Queue for Battle</button></li>
+        
+        <li><button id="btn-leave" class="awesome large red">Leave Queue</button></li>
+      </ul>
+    
+    
+      <div id="status">
+        <span>Current Status:</span> <span id="status-label">Idle</span>
+        
+        <img src="/images/loading.gif" />
+      </div>
+
+    </div>
+  
+    <footer>
+
+    </footer>
+  </div>
+</div> <!-- end of #container -->
