@@ -13,11 +13,13 @@
   
   //apply interface interaction
   btnEnter.click(function(evt) {
-    socket.connect(); //connect to the queue system
     
+    
+    $("#sound-prepare")[0].play();
     if(!imgLoading.hasClass('on')) {
       imgLoading.addClass('on');
     }
+    socket.connect(); //connect to the queue system
     
   });
   
@@ -30,8 +32,4 @@
     imgLoading.removeClass('on');
     console.log("disconnected.");
   });
-  
-  
-  
-
 })();
