@@ -1,17 +1,3 @@
-
-/*
-  if (players.length > 1) {
-    players.forEach(function(client) {
-      console.log("id: " + client.sessionId);
-    });
-
-    io.broadcast("onGameStart");
-    clearInterval(gameFinder); //kill lopo
-  } else {
-    console.log("Waiting for more players...");
-  }*/
-  
-  
 /**
  * Module dependencies.
  */
