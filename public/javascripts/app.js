@@ -7,15 +7,10 @@
   //start the socket listener
   var socket = new io.Socket("localhost", {port: 3001});
   
-  socket.on('message', function(response) {
-    console.log("oh hai there from server!");
-    //receive message from server
-    
-    
+  socket.on('message', function(response) {    
     if(response == 'onGameStart') {
       $("#main").hide('slow', function() {
         $("#game").show('fast');
-        //INCEPTION1!!!!
       });
       
     }
@@ -42,18 +37,3 @@
     console.log("disconnected.");
   });
 })();
-
-
-
-/*
-
-  socket.on('message', function(response) {
-    
-    console.log(response);
-
-    if(response == 'onGameStart') {
-      $("#main").hide('slow', function() {
-        $("#game").show('fast');
-      });
-    }
-  });*/

@@ -65,18 +65,12 @@ io.on('connection', function(client) {
 });
 
 var gameFinder = setInterval(function() {
-  
-  
   if(players.length > 1) {
-    
     io.broadcast("onGameStart");
-    
     clearInterval(gameFinder);
   } else {
     console.log("Waiting for more plaeyrs");
   }
-  
-  
 }, 1500);
 
 
